@@ -1,4 +1,4 @@
-package K02_VariableVeData.D02_VariableOlusturmaVeKullanma;
+package K02_variableVeData.D02_VariableOlusturmaVeKullanma;
 
 public class C01_VariableOlusturma {
 

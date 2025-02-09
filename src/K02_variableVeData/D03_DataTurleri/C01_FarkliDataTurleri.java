@@ -1,4 +1,4 @@
-package K02_VariableVeData.D03_DataTurleri;
+package K02_variableVeData.D03_DataTurleri;
 
 public class C01_FarkliDataTurleri {
 

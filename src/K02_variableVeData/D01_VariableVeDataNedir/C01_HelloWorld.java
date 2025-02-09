@@ -1,4 +1,4 @@
-package K02_VariableVeData.D01_VariableVeDataNedir;
+package K02_variableVeData.D01_VariableVeDataNedir;
 
 public class C01_HelloWorld {
 
