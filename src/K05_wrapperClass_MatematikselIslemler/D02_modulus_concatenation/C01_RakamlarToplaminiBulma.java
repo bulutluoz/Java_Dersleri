@@ -13,27 +13,46 @@ public class C01_RakamlarToplaminiBulma {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Lutfen 3 basamakli pozitif bir tamsayi giriniz...");
         int sayi = scanner.nextInt(); // 245
-        int birlerBasamgindakiRakam = 0;
+
         int rakamlarToplami = 0;
+        int siradakiRakam = 0;
+
+        // sayi ==> 245    rakamlarToplami => 0  siradakiRakam => 0
+        // once birler basamagindaki rakami bulup
+        // rakamlar toplamina ekleyelim
+
+        siradakiRakam = sayi % 10 ;  //    245 % 10 ==> 5
+        rakamlarToplami = rakamlarToplami + siradakiRakam ; // 0 + 5 ==> 5
+
+        // 245'i 5'den kurtulup 24 haline getirmek istiyorum
+        sayi = sayi / 10 ;  //  245 / 10 => 24,5  ama java 24 yapar
 
 
-        birlerBasamgindakiRakam = sayi % 10;
+        // sayi ==> 24    rakamlarToplami => 5  siradakiRakam => 5
+        // onlar basamagindaki rakami bulup
+        // rakamlar toplamina ekleyelim
 
-        rakamlarToplami = rakamlarToplami + birlerBasamgindakiRakam;
-
-        sayi = sayi / 10;
-
-
-        birlerBasamgindakiRakam = sayi % 10;
+        siradakiRakam = sayi % 10 ;  // 24 % 10 ==> 4
+        rakamlarToplami = rakamlarToplami + siradakiRakam; // 5 + 4 => 9
+        sayi = sayi / 10; // 24 / 10 => 2.4 ama java 2 verir
 
 
-        rakamlarToplami = rakamlarToplami + birlerBasamgindakiRakam;
+        // sayi ==> 2   rakamlarToplami => 9  siradakiRakam => 4
+        // yuzler basamagindaki rakami bulup
+        // rakamlar toplamina ekleyelim
 
-        sayi = sayi / 10;
-        rakamlarToplami = rakamlarToplami + sayi;
-
+        // geriye sadece asil sayinin yuzler basamaginda olan 2 kaldigi icin
+        // daha fazla uzatmaya gerek yok, toplama yapabiliriz
+        rakamlarToplami = rakamlarToplami + sayi ; // 9 + 2 ==> 11
 
         System.out.println("Girilen sayinin rakamlar toplami : " + rakamlarToplami);
+
+
+
+
+
+
+
 
 
 
