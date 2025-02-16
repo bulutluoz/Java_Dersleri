@@ -17,12 +17,12 @@ public class C01_AndOperatoru {
 
         boolean genelSonuc1 = a>=b     &&   a<b     &&      a>b-8 ;
 
-        System.out.println(genelSonuc1); //
+        System.out.println(genelSonuc1); // false
 
 
         boolean genelSonuc2 = a>=b     &   a<b     &      a>b-8 ;
 
-        System.out.println(genelSonuc2); //
+        System.out.println(genelSonuc2); // false
 
 
 
@@ -32,6 +32,13 @@ public class C01_AndOperatoru {
          bu durumda sonuc yine false olsa da
          tum islemlerin yapilmasini isteriz
          bunun icin & kullanmayi tercih ederiz
+
+         ozetle
+
+         hizli sonuc onemli ise    &&
+         tum islemlerin yapilmasi onemli ise   &
+
+
          */
 
 
@@ -42,8 +49,10 @@ public class C01_AndOperatoru {
 
         boolean genelSonuc =  (sonuc1= a>=b)     &  (sonuc2 = a<b)     &      (sonuc3=a>b-8) ;
 
-
-
+        System.out.println( "& sonuc1 : " + sonuc1);
+        System.out.println( "& sonuc2 : " + sonuc2);
+        System.out.println( "& sonuc3 : " + sonuc3);
+        System.out.println( "& genelSonuc : " + genelSonuc);
 
 
         boolean sonuc4=true;
@@ -52,7 +61,10 @@ public class C01_AndOperatoru {
 
         boolean genelSonuc3 =  (sonuc4= a>=b)     &&  (sonuc5 = a<b)     &&      (sonuc6=a>b-8) ;
 
-
+        System.out.println( "&& sonuc4 : " + sonuc4);
+        System.out.println( "&& sonuc5 : " + sonuc5);
+        System.out.println( "&& sonuc6 : " + sonuc6);
+        System.out.println( "&& genelSonuc3 : " + genelSonuc3);
 
 
     }
