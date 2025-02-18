@@ -27,15 +27,7 @@ public class C02_CokluDegisken_IndirimHesaplama {
         char kartVarMi = scanner.next().toUpperCase().charAt(0);
 
 
-        if (kartVarMi=='E' && urunAdedi>10){
-            System.out.println("%20 indirimli toplam fiyat : " + indirimsizToplamFiyat*80/100);
-        } else if (kartVarMi=='E' ) { // && urunAdedi<=10
-            System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat*85/100);
-        } else if (kartVarMi=='H' && urunAdedi>10) {
-            System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat*85/100);
-        } else if (kartVarMi=='H' && urunAdedi<=10) {
-            System.out.println("%10 indirimli toplam fiyat : " + indirimsizToplamFiyat*90/100);
-        }
+
 
 
     }
