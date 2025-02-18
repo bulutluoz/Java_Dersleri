@@ -30,8 +30,29 @@ public class C03_EmeklilikHesabi_NestedIfElse {
             biz cinsiyeti ana degisken kabul edelim
          */
 
+        if (cinsiyet == 'K'){ // bu if Kadinlari secer
+            // Kadinlar bolgesi
+            if (yas<15 || yas>80){
+                System.out.println("Girilen yas icin emeklilik hesaplanamaz");
+            } else if (yas >= 60) {
+                System.out.println("Kadin ve 60 yasdan buyuk, emekli olabilir");
+            } else {
+                System.out.println("Kadinlar 60 yasinda emekli olabilir, daha " +(60-yas)+ " yil calismalisiniz");
+            }
 
+        } else if (cinsiyet == 'E') { // bu if erkekleri secer
+            // erkekler bolgesi
+            if (yas<15 || yas>80){
+                System.out.println("Girilen yas icin emeklilik hesaplanamaz");
+            } else if (yas >= 65) {
+                System.out.println("Erkek ve 65 yasdan buyuk, emekli olabilir");
+            } else {
+                System.out.println("Erkekler 65 yasinda emekli olabilir, daha " +(65-yas)+ " yil calismalisiniz");
+            }
 
+        } else { // yukardaki 2 if erkek ve kadinlari secti, o if'lerden gecen deger uygun olmayacaktir
+            System.out.println("Cinsiyet olarak E veya K girmelisiniz!!!!");
+        }
 
 
     }

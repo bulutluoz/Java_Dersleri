@@ -23,7 +23,17 @@ public class C01_CokluDegisken_Emeklilik {
         System.out.println("Lutfen yasinizi giriniz...");
         double yas = scanner.nextDouble();
 
-
+        if ( !( cinsiyet == 'K' || cinsiyet == 'E' )  || yas < 15  || yas > 80   ){
+            System.out.println("Girilen degerler icin emeklilik hesaplanamaz");
+        } else if (cinsiyet == 'K'  && yas >=60) {
+            System.out.println("Kadin ve 60 yasdan buyuk, emekli olabilir");
+        } else if (cinsiyet == 'K' && yas <60) {
+            System.out.println("Kadinlar 60 yasinda emekli olabilir, daha " +(60-yas)+ " yil calismalisiniz");
+        } else if (cinsiyet == 'E'  && yas >=65) {
+            System.out.println("Erkek ve 65 yasdan buyuk, emekli olabilir");
+        } else if (cinsiyet == 'E' && yas <65) {
+            System.out.println("Erkekler 65 yasinda emekli olabilir, daha " +(65-yas)+ " yil calismalisiniz");
+        }
 
 
     }
