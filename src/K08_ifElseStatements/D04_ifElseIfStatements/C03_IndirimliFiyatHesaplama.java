@@ -23,7 +23,17 @@ public class C03_IndirimliFiyatHesaplama {
 
         double toplamIndirimsizFiyat = adet * urunFiyati;
 
-
+        if (adet<0 || urunFiyati<0){
+            System.out.println("Girilen degerler negatif olamaz");
+        } else if (adet<10) {
+            System.out.println("az urun aldiniz, indirimsiz toplam fiyat : " + toplamIndirimsizFiyat);
+        } else if ( adet <50) {
+            System.out.println("%10 indirim kazandiniz, toplam fiyat : " + toplamIndirimsizFiyat *90/100 ) ;
+        } else if ( adet < 100) {
+            System.out.println("%20 indirim kazandiniz, toplam fiyat : " + toplamIndirimsizFiyat*80/100 ) ;
+        } else {
+            System.out.println("%25 indirim kazandiniz, toplam fiyat : " + toplamIndirimsizFiyat*75/100 ) ;
+        }
 
 
     }

@@ -9,7 +9,7 @@ public class C04_ElseIleBitmezse {
         /*
             EGER bir if else if... statement
             else ile bitmiyorsa, bu if-else tum durumlari KAPSAYAMAZ
-            yani bazi degerler icin hicbir if body'si calismaz
+            yani bazi degerler icin hicbir if body'si calismayabilir
          */
 
         // Kullanicidan pozitif bir tamsayi isteyin
@@ -22,6 +22,13 @@ public class C04_ElseIleBitmezse {
         int girilenSayi = scanner.nextInt();
 
 
+        if ( girilenSayi % 3 == 0 && girilenSayi % 5 == 0 ){
+            System.out.println("super");
+        } else if (girilenSayi % 5 == 0) {
+            System.out.println("5'in kati");
+        } else if (girilenSayi % 3 == 0) {
+            System.out.println("3'un kati");
+        }
 
     }
 }

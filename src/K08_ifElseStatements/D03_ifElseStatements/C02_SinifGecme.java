@@ -15,7 +15,21 @@ public class C02_SinifGecme {
         double not=scanner.nextDouble();
 
 
+        if (not >= 50){
+            System.out.println("Sinifi Gectin");
+        }
 
+        if (not<50){
+            System.out.println("Maalesef kaldin");
+        }
+
+
+
+        if (not >= 50){
+            System.out.println("Sinifi Gectin");
+        } else {
+            System.out.println("Maalesef kaldin");
+        }
 
     }
 }

@@ -16,13 +16,33 @@ public class C04_KucukHarfiDegistirme {
 
         // 1.yontem ascii table kullanarak
 
+        if ( karakter >= 'a' && karakter <= 'z' ){
+            // girilen karakter kucuk harf ve onu buyuk harf olarak yazdiracagiz
 
+            System.out.println("Girilen karakter : " + (char)(karakter - 32) );
+
+
+        } else {
+            // girilen karakter kucuk harf  degil,onu oldugu gibi yazdiracagiz
+            System.out.println("Girilen karakter : " + karakter);
+
+        }
 
 
 
         // 2.yontem Wrapper class ozelliklerini kullanarak
 
+        if ( Character.isLowerCase(karakter) ){
+            // girilen karakter kucuk harf ve onu buyuk harf olarak yazdiracagiz
 
+            System.out.println("Girilen karakter : " +  Character.toUpperCase(karakter)      );
+
+
+        } else {
+            // girilen karakter kucuk harf  degil,onu oldugu gibi yazdiracagiz
+            System.out.println("Girilen karakter : " + karakter);
+
+        }
 
 
     }

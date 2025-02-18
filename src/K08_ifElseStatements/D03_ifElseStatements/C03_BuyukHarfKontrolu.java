@@ -16,12 +16,21 @@ public class C03_BuyukHarfKontrolu {
 
         // 1.yontem ascii table'i kullanarak
 
+        if ( karakter >= 'A'  && karakter <= 'Z'  ){
+            System.out.println("Buyuk harf");
+        } else {
+            System.out.println("Buyuk harf degil");
+        }
 
 
 
         // 2.yontem Character Wrapper Class ozelliklerini kullanalim
 
-
+        if (  Character.isUpperCase(karakter) ){
+            System.out.println("Buyuk harf");
+        } else {
+            System.out.println("Buyuk harf degil");
+        }
 
     }
 }

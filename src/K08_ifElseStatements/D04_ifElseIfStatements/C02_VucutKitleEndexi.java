@@ -20,7 +20,19 @@ public class C02_VucutKitleEndexi {
         System.out.println("Lutfen cm olarak boyunuzu giriniz...");
         int boy = scanner.nextInt();
 
+        double vke = kilo*10000 / (boy *boy);
 
+        System.out.println("Vucut kitle endeksiniz : " + vke);
+
+        if (vke > 30){
+            System.out.println("obez");
+        } else if (vke > 25) {
+            System.out.println("kilolu");
+        } else if ( vke > 20) {
+            System.out.println("normal");
+        } else {
+            System.out.println("zayif");
+        }
 
 
     }

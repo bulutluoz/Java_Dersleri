@@ -18,6 +18,19 @@ public class C01_SayiAnalizi {
         System.out.println("Lutfen pozitif bir tamsayi giriniz...");
         int girilenSayi = scanner.nextInt();
 
+        if (girilenSayi < 0){
+            System.out.println("pozitif sayi girmelisiniz");
+        } else if ( girilenSayi < 10 ){
+            System.out.println("girdiginiz sayi rakam");
+        } else if (girilenSayi < 100){
+            System.out.println("iki basamakli sayi");
+        } else if (girilenSayi < 1000){
+            System.out.println("uc basamakli sayi");
+        } else {
+            System.out.println("cok buyuk sayi");
+        }
+
+
 
 
     }

@@ -15,5 +15,12 @@ public class C05_Emeklilik {
         double yas = scanner.nextDouble();
 
 
+        if (  yas >= 65 ){
+            System.out.println("Emekli olabilirsin");
+        } else {
+            System.out.println("Emekli olmak icin " + (65-yas) + " yil daha calismalisin");
+        }
+
+
     }
 }
