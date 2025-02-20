@@ -29,6 +29,30 @@ public class C01_Indirim1 {
         // ana degisken kart var mi olsun
 
 
+        if (kartVarMi == 'E'){
+            // musteri karti olanlarin bolgesi
+            if (urunAdedi > 10)
+                System.out.println("%20 indirimli toplam fiyat : " + indirimsizToplamFiyat * 80 /100);
+            else if (urunAdedi > 0)
+                System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85 /100);
+            else
+                System.out.println("urun adedi gecersiz");
+
+
+        } else if (kartVarMi == 'H') {
+            // musteri karti olmayanlar
+            if (urunAdedi > 10)
+                System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85 /100);
+            else if (urunAdedi > 0)
+                System.out.println("%10 indirimli toplam fiyat : " + indirimsizToplamFiyat * 90 /100);
+            else
+                System.out.println("urun adedi gecersiz");
+
+
+        } else {
+            System.out.println("Kart var mi sorusu icin girilen deger gecersiz");
+        }
+
 
     }
 }

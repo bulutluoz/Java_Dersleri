@@ -27,14 +27,32 @@ public class C02_CokluDegisken_IndirimHesaplama {
         char kartVarMi = scanner.next().toUpperCase().charAt(0);
 
 
-        if (kartVarMi == 'E' && urunAdedi>10){
-            System.out.println("%20 indirimli toplam fiyat : " + indirimsizToplamFiyat * 80 /100);
-        } else if (kartVarMi == 'E' ) { // && urunAdedi <=10  bu sart zaten saglaniyor, yazmaya gerek yok
-            System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85 /100);
-        } else if (kartVarMi == 'H' && urunAdedi > 10) {
-            System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85 /100);
-        } else if (kartVarMi == 'H' ) { // && urunAdedi <=10
-            System.out.println("%10 indirimli toplam fiyat : " + indirimsizToplamFiyat * 90 /100);
+        // ana degisken olarak urun adedini secelim
+
+        if (urunAdedi > 10){
+            // 10 urunden fazla urun alanlarin bolgesi
+
+            if (kartVarMi == 'E')
+                System.out.println("%20 indirimli toplam fiyat : " + indirimsizToplamFiyat * 80 /100);
+            else if (kartVarMi == 'H')
+                System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85 /100);
+            else
+                System.out.println("Kart var mi sorusuna girilen deger gecersiz");
+
+
+        } else if (urunAdedi > 0) {
+            // urun adedi 10'dan fazla olmayip ama 0'dan fazla olanlarin bolgesi  0 < urun adedi <= 10
+            if (kartVarMi == 'E')
+                System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85 /100);
+            else if (kartVarMi == 'H')
+                System.out.println("%10 indirimli toplam fiyat : " + indirimsizToplamFiyat * 90 /100);
+            else
+                System.out.println("Kart var mi sorusuna girilen deger gecersiz");
+
+
+        } else {
+            // urun adedi olarak negatif sayi girenlerin bolgesi
+            System.out.println("Urun sayisi negatif olamaz");
         }
 
 
