@@ -1,4 +1,4 @@
-package K11_stringManipulations.D05_nullPointer;
+package K11_stringManipulations.D06_replace;
 
 public class C05_replaceAll {
 

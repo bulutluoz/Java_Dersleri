@@ -1,8 +1,8 @@
-package K11_stringManipulations.D04_endsWith_indexOf;
+package K11_stringManipulations.D04_indexOf_lastIndexOf;
 
 import java.util.Scanner;
 
-public class C06_KullanimSayisiBulma {
+public class C05_lastIndexOf {
 
     public static void main(String[] args) {
 
@@ -20,17 +20,14 @@ public class C06_KullanimSayisiBulma {
         System.out.println("Lutfen cumlede aranacak metni girin...");
         String metin = scanner.nextLine();
 
-
-        int metninIlkIndexi = cumle.indexOf(metin); // ilk kullanimi bulursa degeri, bulamazsa -1
-
-        int metninIkinciKulllanimIndexi = cumle.indexOf(metin, metninIlkIndexi+1);
-        // ikinci kullanim varsa degeri, yoksa -1
+        int metninIlkIndexi = cumle.indexOf(metin);
+        int metninSonIndexi = cumle.lastIndexOf(metin);
 
         if (metninIlkIndexi == -1){
             System.out.println("cumle aranan metni icermiyor");
-        } else if (metninIkinciKulllanimIndexi == -1) { // ilk kullanim -1 degil ama 2.kullanim -1
+        } else if ( metninIlkIndexi == metninSonIndexi) {
             System.out.println("cumle aranan metni sadece 1 adet iceriyor");
-        }else{ // ilk kullanim -1 degil, 2.kullanim da -1 degil
+        } else {
             System.out.println("cumle aranan metni 1'den fazla iceriyor");
         }
 

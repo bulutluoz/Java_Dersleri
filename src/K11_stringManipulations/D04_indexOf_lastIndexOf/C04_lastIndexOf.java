@@ -1,6 +1,6 @@
-package K11_stringManipulations.D04_endsWith_indexOf;
+package K11_stringManipulations.D04_indexOf_lastIndexOf;
 
-public class C07_lastIndexOf {
+public class C04_lastIndexOf {
 
     public static void main(String[] args) {
 
@@ -15,11 +15,11 @@ public class C07_lastIndexOf {
         // cumlede "tut" un ucuncu kullanim index'i
         System.out.println(str.indexOf("tut", 15)); // 22
 
-
         // cumlede "tut" un son kullanim index'i nedir?
         System.out.println(str.lastIndexOf("tut")); // 22
 
 
+        // "ali topu tut, tut ali tut";
 
         // cumlede "ali" nin ilk kullanim index'i
         System.out.println(str.indexOf("ali")); // 0
@@ -31,10 +31,8 @@ public class C07_lastIndexOf {
         // cumlede "top" nin ilk kullanim index'i
         System.out.println(str.indexOf("top")); // 4
 
-
         // cumlede "top" nin son kullanim index'i
         System.out.println(str.lastIndexOf("top")); // 4
-
 
 
         /*
@@ -48,17 +46,6 @@ public class C07_lastIndexOf {
          */
 
 
-        // "ali topu tut, tut ali tut";
-
-        // tut kelimesinin son kullanim index'i nedir?
-        System.out.println(str.lastIndexOf("tut")); // 22
-
-
-        // tut kelimesinin sondan ikinci kullaniminin index'i nedir?
-        System.out.println(str.lastIndexOf("tut", 21)); // 14
-
-        // tut kelimesinin sondan ucuncu kullaniminin index'i nedir?
-        System.out.println(str.lastIndexOf("tut", 13)); // 9
 
 
 
