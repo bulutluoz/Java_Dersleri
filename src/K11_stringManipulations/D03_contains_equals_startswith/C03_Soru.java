@@ -1,8 +1,8 @@
-package K11_stringManipulations.D02_equals_substring_contains;
+package K11_stringManipulations.D03_contains_equals_startswith;
 
 import java.util.Scanner;
 
-public class C05_Soru {
+public class C03_Soru {
 
     public static void main(String[] args) {
 
@@ -16,15 +16,7 @@ public class C05_Soru {
         System.out.println("Lutfen bir metin giriniz...");
         String metin = scanner.nextLine().toLowerCase();
 
-        if (metin.contains("ev") && metin.contains("is")) {
-            System.out.println("Evden calismak gibisi yok");
-        } else if(metin.contains("is")){
-            System.out.println("Calismak ne guzel");
-        } else  if (metin.contains("ev")){
-            System.out.println("Ev gibisi var mi?");
-        }else {
-            System.out.println("Cok calismak lazim, coook");
-        }
+
 
 
     }

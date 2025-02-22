@@ -1,8 +1,8 @@
-package K11_stringManipulations.D03_equals_startswith;
+package K11_stringManipulations.D03_contains_equals_startswith;
 
 import java.util.Scanner;
 
-public class C03_EmailKontrol {
+public class C06_EmailKontrol {
 
     public static void main(String[] args) {
 

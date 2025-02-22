@@ -1,6 +1,6 @@
-package K11_stringManipulations.D02_equals_substring_contains;
+package K11_stringManipulations.D02_equals_substring;
 
-public class C041_equals_equalsIgnoreCase {
+public class C01_equals_equalsIgnoreCase {
 
     public static void main(String[] args) {
 
@@ -21,7 +21,8 @@ public class C041_equals_equalsIgnoreCase {
             equals(str1,str2) verilen String'leri
             SADECE METIN olarak karsilastirir
             metinler ayni ise TRUE degeri verir
-            metinlerde farkli karakterler veya case farkliligi varsa FALSE degeri verir
+            metinlerde farkli karakterler veya
+            case farkliligi varsa FALSE degeri verir
 
          */
 
@@ -38,7 +39,7 @@ public class C041_equals_equalsIgnoreCase {
 
         System.out.println(str1.equalsIgnoreCase(str2)); // Ali <==> ALI ==> true
         System.out.println(str1.equalsIgnoreCase(str3)); // Ali <==> ali ==> true
-        System.out.println(str1.equalsIgnoreCase(str4)); // Ali <==> Ali ==> false
+        System.out.println(str1.equalsIgnoreCase(str4)); // Ali <==> Ali  ==> false
         System.out.println(str1.equalsIgnoreCase(str5)); // Ali <==> Ali ==> true
         System.out.println(str2.equalsIgnoreCase(str3)); // ALI <==> ali ==> true
 

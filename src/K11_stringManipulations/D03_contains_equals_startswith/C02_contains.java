@@ -1,6 +1,6 @@
-package K11_stringManipulations.D02_equals_substring_contains;
+package K11_stringManipulations.D03_contains_equals_startswith;
 
-public class C04_contains {
+public class C02_contains {
 
     public static void main(String[] args) {
 
@@ -18,11 +18,6 @@ public class C04_contains {
         /*
            contains method'u aranan harf veya metnin kac kere kullanildigi ile ILGILENMEZ
          */
-
-
-
-
-
 
 
 

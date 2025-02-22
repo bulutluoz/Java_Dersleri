@@ -1,4 +1,4 @@
-package K11_stringManipulations.D03_equals_startswith;
+package K11_stringManipulations.D04_endsWith_indexOf;
 
 import java.util.Scanner;
 

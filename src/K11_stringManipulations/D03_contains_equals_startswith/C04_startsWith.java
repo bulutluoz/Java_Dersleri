@@ -1,6 +1,6 @@
-package K11_stringManipulations.D03_equals_startswith;
+package K11_stringManipulations.D03_contains_equals_startswith;
 
-public class C01_startsWith {
+public class C04_startsWith {
 
     public static void main(String[] args) {
 
