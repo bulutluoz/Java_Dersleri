@@ -1,4 +1,4 @@
-package K11_stringManipulations.D03_contains_equals_startswith;
+package K11_stringManipulations.D03_contains_startswith_endsWith;
 
 public class C02_contains {
 
@@ -15,10 +15,11 @@ public class C02_contains {
 
         System.out.println(str.contains("H")); // true
 
+        System.out.println(str.contains("x")); // false
+
         /*
            contains method'u aranan harf veya metnin kac kere kullanildigi ile ILGILENMEZ
          */
-
 
 
 
@@ -29,22 +30,23 @@ public class C02_contains {
              ve metinde kullanildigi sekilde arar
          */
 
-        System.out.println(str.contains("k")); //
+        System.out.println(str.contains("k")); // true
 
-        System.out.println(str.contains("her")); //
+        System.out.println(str.contains("her")); // true
 
-        System.out.println(str.contains("r a")); //
+        System.out.println(str.contains("r a")); // true
 
-        System.out.println(str.contains("ra")); //
+        System.out.println(str.contains("ra")); // false
 
-        System.out.println(str.contains("H y")); //
+        System.out.println(str.contains("H y")); // false
 
-        System.out.println(str.contains("A")); //
+        System.out.println(str.contains("A")); // false
 
-        System.out.println(str.contains("Java")); //
+        System.out.println(str.contains("Java")); // true
 
-        System.out.println(str.contains("java")); //
+        System.out.println(str.contains("java")); // false
 
+        System.out.println( str.equalsIgnoreCase("java")); // false
 
 
 
