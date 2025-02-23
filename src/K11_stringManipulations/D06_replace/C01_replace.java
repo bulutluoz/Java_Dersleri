@@ -2,24 +2,31 @@ package K11_stringManipulations.D06_replace;
 
 import java.util.Scanner;
 
-public class C03_replace {
+public class C01_replace {
 
     public static void main(String[] args) {
 
         String str = "Java ogrenmek cok guzel";
 
         // metni "a" yerine "A" olacak sekilde yazdirin
-        System.out.println(str.replace("a", "A")); // JAvA ogrenmek cok guzel
+        System.out.println(   str.replace('a','A'));
+        // JAvA ogrenmek cok guzel
+        System.out.println(  str.replace("a","A"));
+        //JAvA ogrenmek cok guzel
 
         // metni 'e' yerine 'E' olacak sekilde yazdirin
-        System.out.println(str.replace('e', 'E')); // Java ogrEnmEk cok guzEl
+        System.out.println(str.replace('e', 'E'));
+        // Java ogrEnmEk cok guzEl
 
         // "ogrenmek" kelimesini "bilmek" olarak degistirin
-        System.out.println(str.replace("ogrenmek", "bilmek")); // Java bilmek cok guzel
-        System.out.println(str.replace("k g", "abcd")); // Java ogrenmek coabcduzel
+
+        str = str.replace("ogrenmek","bilmek");
+        // Java bilmek cok guzel
+
 
         // tum bosluklari silip, metni bosluk olmadan yazdirin
-        System.out.println(str.replace(" ", "")); // Javaogrenmekcokguzel
+        System.out.println(  str.replace(" " , ""));
+        // Javabilmekcokguzel
 
 
 
@@ -35,7 +42,6 @@ public class C03_replace {
 
         System.out.println("Yerine yazmak istediginiz metni soyleyin...");
         String yeniMetin = scanner.nextLine();
-
 
         System.out.println(str.replace(eskiMetin, yeniMetin));
 
