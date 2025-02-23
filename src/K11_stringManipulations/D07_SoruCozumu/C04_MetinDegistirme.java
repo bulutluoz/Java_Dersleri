@@ -16,32 +16,44 @@ public class C04_MetinDegistirme {
 
         int uzunluk = metin.length();
 
-
-        if ( uzunluk % 2 == 0){ // metnin uzunlugu cift
-            //  String’in uzunlugu cift sayi ise tam ortasina :) ekleyin,
+        if ( uzunluk % 2 == 0){
+            // ismin uzunlugu cift ise
+            // tam ortasina :) ekleyin,
 
             System.out.println(
 
-                    metin.substring( 0,uzunluk/2 ) +
+                    metin.substring(0,uzunluk/2) +
                     ":)" +
                     metin.substring(uzunluk/2)
 
             );
 
-        }else{ // metnin uzunlugu tek
-            //  String’in uzunlugu tek sayi ise ortadaki harfi silin ve yerine :( yazdirin.
+
+
+        } else {
+            // ismin uzunlugu tek
+            // ortadaki harfi silin ve yerine :( yazdirin.
 
             System.out.println(
 
                     metin.substring(0,uzunluk/2) +
                     ":(" +
-                    metin.substring(uzunluk/2+1)
-
+                    metin.substring(uzunluk/2 +1)
 
             );
 
 
+
         }
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,6 @@
 package K11_stringManipulations.D07_SoruCozumu;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class C05_IsmiDuzenleme {
@@ -9,68 +10,65 @@ public class C05_IsmiDuzenleme {
         // Kullanicidan ismini alin
         // Kullanici 3 isimli olsa da
         // isimlerin ilk harfi buyuk harf, kalanlar * olacak sekilde yazdirin
-        // Ornek input  : ali mert can
-        //       output : A** M*** C**
+        // Ornek input  : ali mert can  , aysel yilmaz ,  Kemal
+        //       output : A** M*** C**  , A**** Y***** ,  K****
 
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Lutfen isminizi giriniz...");
         String isim = scanner.nextLine();
 
+
+        // once kelime sayisini int olarak bulalim
+        // metinde space sayisina bakalim
+        //   space yoksa 1 isim  => ilkSpaceIndex ==> -1
+        // 1 space varsa 2 isim  => ilkSpaceIndex != -1 , ikinciSpaceIndex ==> -1
+        // 2 space varsa 3 isim var demektir  => ilkSpaceIndex != -1 , ikinciSpaceIndex != -1
+
         int ilkSpaceIndex = isim.indexOf(" ");
         int ikinciSpaceIndex = isim.indexOf(" ", ilkSpaceIndex+1);
 
 
-
-        // once kelime sayisini int olarak bulalim
-
-        int kelimeSayisi = 0;
-
         if (ilkSpaceIndex == -1){
-            kelimeSayisi = 1;
-        } else if ( ikinciSpaceIndex == -1) {
-            kelimeSayisi = 2;
-        } else{
-            kelimeSayisi = 3;
-        }
+            // tek isim var    kemal ==> K****
+
+            System.out.println(
+
+                    isim.substring(0,1).toUpperCase()+
+                    isim.substring(1).replaceAll("\\w","*")
+            );
 
 
-        switch (kelimeSayisi){
+        } else if ( ikinciSpaceIndex ==-1) { // ilkSpaceIndex != -1 && yukardaki elek bunu zaten eledi
+            // iki isim var    ali mert => A** M***
 
-            case 1 : // tek kelimeli isim   mehmet
+            System.out.println(
 
-                System.out.println(
-                        isim.substring(0,1).toUpperCase()+
-                        isim.substring(1).replaceAll("\\w","*")
-                );
-
-                break;
-
-            case 2 : // iki kelimeli isim   mehmet ali
-
-                System.out.println(
-                        isim.substring(0,1).toUpperCase()+
-                        isim.substring(1,ilkSpaceIndex).replaceAll("\\w","*")  +
-                        " "+
-                        isim.substring(ilkSpaceIndex+1, ilkSpaceIndex+2).toUpperCase()+
-                        isim.substring(ilkSpaceIndex+2).replaceAll("\\w","*")
-                );
+                    isim.substring(0,1).toUpperCase()+
+                    isim.substring(1,ilkSpaceIndex).replaceAll("\\w","*")+
+                    " "+
+                    isim.substring(ilkSpaceIndex+1 , ilkSpaceIndex+2).toUpperCase()+
+                    isim.substring(ilkSpaceIndex+2)  .replaceAll("\\w","*")
+            );
 
 
-                break;
 
-            default: // iki kelimeden fazla isim   ali mert can
+        } else {
+            // ikiden fazla isim var
 
-                System.out.println(
-                        isim.substring(0,1).toUpperCase()+
-                        isim.substring(1,ilkSpaceIndex).replaceAll("\\w","*")  +
-                        " "+
-                        isim.substring(ilkSpaceIndex+1, ilkSpaceIndex+2).toUpperCase()+
-                        isim.substring(ilkSpaceIndex+2,ikinciSpaceIndex).replaceAll("\\w","*")+
-                        " "+
-                        isim.substring(ikinciSpaceIndex+1,ikinciSpaceIndex+2).toUpperCase()    +
-                        isim.substring(ikinciSpaceIndex+2).replaceAll("\\w","*")
-                );
+            System.out.println(
+
+                    isim.substring(0,1).toUpperCase()+
+                    isim.substring(1,ilkSpaceIndex).replaceAll("\\w","*")+
+                    " "+
+                    isim.substring(ilkSpaceIndex+1 ,ilkSpaceIndex+2).toUpperCase()+
+                    isim.substring(ilkSpaceIndex+2 , ikinciSpaceIndex).replaceAll("\\w","*")+
+                    " "+
+                    isim.substring(ikinciSpaceIndex+1, ikinciSpaceIndex+2).toUpperCase()+
+                    isim.substring(ikinciSpaceIndex+2).replaceAll("\\w","*")
+
+
+            );
 
 
         }

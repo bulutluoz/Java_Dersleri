@@ -20,34 +20,36 @@ public class C03_IsimDuzenleme {
         System.out.println("Lutfen soyisminizi giriniz...");
         String soyisim = scanner.nextLine();
 
-
-        if (isim.length() > soyisim.length()){
+        if ( isim.length() > soyisim.length()){
             //    isim ve soyismi ilk harf buyuk kalanlar kucuk seklinde yazdirin
 
             System.out.println(
 
-                    isim.substring(0,1).toUpperCase()+
+                    isim.substring(0,1).toUpperCase() +
                     isim.substring(1).toLowerCase()+
                     " "+
-                    soyisim.substring(0,1).toUpperCase()+
+                    soyisim.substring(0,1).toUpperCase() +
                     soyisim.substring(1).toLowerCase()
             );
 
 
-        }
 
-
-        if (soyisim.length() > isim.length()){
+        } else if (soyisim.length() > isim.length()){
             //    ismi ilk harf buyuk digerleri kucuk, soyismin tamamini buyuk harflerle yazdirin.
 
             System.out.println(
-                    isim.substring(0,1).toUpperCase()+
+
+                    isim.substring(0,1).toUpperCase() +
                     isim.substring(1).toLowerCase()+
                     " "+
                     soyisim.toUpperCase()
             );
 
         }
+
+
+
+
 
 
     }

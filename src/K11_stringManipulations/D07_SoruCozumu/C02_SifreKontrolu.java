@@ -32,28 +32,33 @@ public class C02_SifreKontrolu {
             sayac++;
         }
 
+
+
         //         - son karakter rakam olmali
+        char sonKarakter = sifre.charAt( sifre.length() -1  );
 
-        char sonKarakter= sifre.charAt( sifre.length()-1);
-
-        if ( !Character.isDigit(sonKarakter) ){
+        if (sonKarakter< '0' || sonKarakter > '9'){
             System.out.println("son karakter rakam olmali");
             sayac++;
         }
 
+
+
         //         - sifre bosluk icermemeli
 
-        if ( sifre.contains(" ")){
+        if (sifre.contains(" ")){
             System.out.println("sifre bosluk icermemeli");
             sayac++;
         }
 
+
         //         - uzunlugu en az 10 karakter olmali
 
-        if ( !(sifre.length() > 10) ){
+        if (sifre.length() < 10){
             System.out.println("sifrenin uzunlugu en az 10 karakter olmali");
             sayac++;
         }
+
 
 
         /*
@@ -63,6 +68,7 @@ public class C02_SifreKontrolu {
 
             sayac 0 ise hic hata yok sonucunu cikarabilir
          */
+
 
         if (sayac == 0){
             System.out.println("sifre basariyla kaydedildi");
