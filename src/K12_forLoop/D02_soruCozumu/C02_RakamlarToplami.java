@@ -15,10 +15,24 @@ public class C02_RakamlarToplami {
         int girilenSayi = scanner.nextInt();
 
 
+        int sayi = girilenSayi;
+
+        int rakam = 0;
+        int rakamlarToplami = 0;
+
+        int basamakSayisi = (sayi+"").length();
 
 
+        for (int i = 1; i <= basamakSayisi ; i++) {
+
+            rakam = sayi % 10 ;
+            rakamlarToplami += rakam;
+            sayi = sayi/10 ;
+
+        }
 
 
+        System.out.println("Girilen " + girilenSayi + " sayisinin rakamlar toplami : " + rakamlarToplami);
 
 
     }

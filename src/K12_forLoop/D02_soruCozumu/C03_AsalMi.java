@@ -14,6 +14,23 @@ public class C03_AsalMi {
         int sayi = scanner.nextInt();
 
 
+        for (int i = 2; i <sayi  ; i++) {
+
+            if ( sayi % i == 0){
+                System.out.println("Asal degil " + i + "'ye bolunuyor");
+                break;
+                // bu kod calistiysa
+                // for loop'un geriye kalani calismasin diyorsak
+                // break yazabiliriz
+            }
+
+            if ( i == sayi-1){
+                System.out.println(sayi + " sayisi asal...");
+            }
+        }
+
+
+
 
 
 

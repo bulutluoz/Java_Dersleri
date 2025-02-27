@@ -17,7 +17,17 @@ public class C01_FaktoryelYazdirma {
         int sayi = scanner.nextInt();
         int faktoryelDegeri = 1;
 
+        System.out.print(sayi + "! = " );
 
+        for (int i = sayi; i >=1 ; i--) {
+
+            faktoryelDegeri *= i;
+
+            if (i == 1) System.out.print(" " +i );
+            else System.out.print(" " +i +" *");
+        }
+
+        System.out.print( " = " + faktoryelDegeri);
 
 
     }
