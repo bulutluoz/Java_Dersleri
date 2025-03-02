@@ -24,6 +24,16 @@ public class C02_NestedForLoop {
         int sutun = scanner.nextInt();
 
 
+        for (int i = 1; i <=satir ; i++) { // kac satir oldugunu belirler
+            for (int j = 1; j <=sutun ; j++) { // her satirda kac eleman oldugunu belirler
+
+
+                System.out.print( i+j + " ");
+
+
+            }
+            System.out.println("");
+        }
 
 
 

@@ -22,7 +22,15 @@ public class C05_NestedForLoop {
         System.out.println("Lutfen satir sayisini giriniz...");
         int satir = scanner.nextInt();
 
+        for (int i = 1; i <=satir ; i++) { // kac satir olacak
 
+            for (int j = 1; j <=i ; j++) { // sekil ucgen oldugu icin
+                                           // her satirda satir numarasi kadar eleman var
+
+                System.out.print( j-1 + " ");
+            }
+            System.out.println("");
+        }
 
 
     }
