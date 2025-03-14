@@ -8,6 +8,7 @@ public class C01_MethodKullanimi {
 
 
         str.toUpperCase();
+        // Result of 'String.toUpperCase()' is ignored
 
         // method gorevini yapti, str'i buyuk harfe cevirip bize getirdi
         // kapicinin istedigimiz ekmegi alip bizim kapimiza gelmesi gibi
@@ -16,9 +17,10 @@ public class C01_MethodKullanimi {
         System.out.println(str.toUpperCase()); // JAVA CANDIR
         // method gorevini yapti,
         // biz de degistirilmis halini hemen yazdirip konsolda gorduk
-        // ama kaydetmedigimiz icin kodun ilerleyen asamalarinda str ==> Java Candir olacaktir
+        // ama kaydetmedigimiz icin kodun ilerleyen asamalarinda
+        // str ==> Java Candir olacaktir
 
-
+        System.out.println(str.charAt(1)); // a
 
         str = str.toLowerCase();
         // method gorevini yapti,
@@ -26,7 +28,7 @@ public class C01_MethodKullanimi {
         // yazdirmadigimiz icin bu halini konsolda goremeyiz
         // ama bu satirdan itibaren str ==> java candir olacaktir
 
-
+        System.out.println(str.charAt(0)); // j
 
 
 

@@ -20,7 +20,21 @@ public class C02_KendiSubstringMethodumuz {
 
          */
 
+        if (basIndex<0 || bitIndex<0 || basIndex>str.length() || bitIndex>str.length()){
+            System.out.println("verilen index'ler hatali");
+        } else if (basIndex > bitIndex){
+            System.out.println("Baslangic index'i bitis index'inden buyuk olamaz");
+        } else {
 
+            for (int i = basIndex; i <bitIndex ; i++) {
+
+                System.out.print(str.charAt(i));
+            }
+        }
+
+        System.out.println();
+
+        System.out.println(str.substring(2, 6));
 
 
     }
