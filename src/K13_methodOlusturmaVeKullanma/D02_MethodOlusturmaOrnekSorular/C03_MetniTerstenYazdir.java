@@ -6,17 +6,20 @@ public class C03_MetniTerstenYazdir {
 
         // verilen metni tersten yazdiran bir method olusturun
 
-        metniTerstenYazdir("Java bu isi cozmus"); // sumzoc isi ub avaJ
+        metniTerstenYazdir("Ali Can"); // naC ilA
+        metniTerstenYazdir("Method candir."); // .ridnac dohteM
+
+
 
     }
-
 
     public static void metniTerstenYazdir( String metin){
 
-        for (int i = metin.length()-1  ; i >=0  ; i--) {
-
+        for (int i = metin.length()-1 ; i >=0 ; i--) {
             System.out.print(metin.charAt(i));
         }
+        System.out.println();
 
     }
+
 }

@@ -6,21 +6,22 @@ public class C02_KucukOlmayaniYazdir {
 
         // verilen iki tamsayidan kucuk olmayani yazdiran bir method olusturun
 
+        kucukOlmayaniYazdir(24,57); // 57
 
-        kucukOlmayaniYazdir(4,78); // 78
+        kucukOlmayaniYazdir(3,-6); // 3
 
-        kucukOlmayaniYazdir(-34,34); // 34
+        kucukOlmayaniYazdir(7,7); // 7
 
-        kucukOlmayaniYazdir(23,23); // 23
 
 
 
     }
 
-    public static void kucukOlmayaniYazdir( int sayi1 , int sayi2 ){
+
+    public static void kucukOlmayaniYazdir( int sayi1 , int sayi2  ){
 
 
-        System.out.println(  sayi1<sayi2 ? sayi2  : sayi1  );
+        System.out.println(  sayi1<sayi2 ? sayi2 : sayi1  );
 
     }
 
