@@ -6,14 +6,12 @@ public class C02_MetniTerseCevirme {
 
         // verilen metnin tersten yazilisini donduren bir method olusturun
 
-        String metin = "Java Candir";
-
-        System.out.println(getTersMetin(metin));
-
-        System.out.println(getTersMetin("Ali Baba")); // abaB ilA
+        System.out.println(getTersMetin("Ali")); // ilA
+        System.out.println(getTersMetin("madam")); // madam
 
 
     }
+
 
     public static String getTersMetin(String metin){
 
@@ -26,7 +24,10 @@ public class C02_MetniTerseCevirme {
         }
 
         return tersMetin;
+
     }
+
+
 
 
 

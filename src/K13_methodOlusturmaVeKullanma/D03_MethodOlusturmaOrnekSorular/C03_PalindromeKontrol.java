@@ -8,12 +8,15 @@ public class C03_PalindromeKontrol {
         // palindrome ise true,
         // palindrome degilse false donduren bir method olusturun
 
+        isPalindrome("kemal");
+
 
         System.out.println(isPalindrome("Madam")); // true
-        System.out.println(isPalindrome("Ey edip adanada pide ye")); // true
         System.out.println(isPalindrome("Java")); // false
 
+
     }
+
 
 
     public static boolean isPalindrome(String metin){
@@ -22,11 +25,12 @@ public class C03_PalindromeKontrol {
 
         if (metin.equalsIgnoreCase(tersMetin)){
             return true;
-        } else {
+        }else {
             return false;
         }
 
     }
+
 
 
 }

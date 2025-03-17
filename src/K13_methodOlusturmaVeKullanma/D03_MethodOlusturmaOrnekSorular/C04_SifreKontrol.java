@@ -15,21 +15,25 @@ public class C04_SifreKontrol {
         //         - sifre bosluk icermemeli
         //         - uzunlugu en az 10 karakter olmali
 
-        System.out.println(isValid("aliCan")); // false
-        // hatalari method'da yazdirdi, sonuc olan false'u main method'a dondurdu
+        System.out.println(isValid("aliCan"));
         //son karakter rakam olmali
         //sifrenin uzunlugu en az 10 karakter olmali
+        //false
 
+        System.out.println(isValid("asdfghjkl fgh"));
+        //son karakter rakam olmali
+        //sifre bosluk icermemeli
+        //false
 
-        System.out.println(isValid("aliMertCan12"));
-        // hata olmadigi icin method'da bir sey yazdirmayacak
-        // method true dondurecek
+        System.out.println(isValid("sdfghj2345678")); // true
 
 
     }
 
     public static boolean isValid(String sifre){
+
         int sayac = 0;
+
 
         //         - ilk harf kucuk harf olmali
         char ilkHarf = sifre.charAt(0);
@@ -38,6 +42,7 @@ public class C04_SifreKontrol {
             System.out.println("ilk harf kucuk harf olmali");
             sayac++;
         }
+
 
 
         //         - son karakter rakam olmali
@@ -51,7 +56,6 @@ public class C04_SifreKontrol {
 
 
         //         - sifre bosluk icermemeli
-
         if (sifre.contains(" ")){
             System.out.println("sifre bosluk icermemeli");
             sayac++;
@@ -59,7 +63,6 @@ public class C04_SifreKontrol {
 
 
         //         - uzunlugu en az 10 karakter olmali
-
         if (sifre.length() < 10){
             System.out.println("sifrenin uzunlugu en az 10 karakter olmali");
             sayac++;
@@ -72,19 +75,19 @@ public class C04_SifreKontrol {
             4 kontrol yaptik
             sona gelindiginde sayac 0 - 1 - 2 - 3 - 4 olabilir
 
-            sayac 0 ise hic hata yok, sifre gecerli sonucunu cikarabilir
-            sayac 0 degilse hata var, sifre gecerli degil diyebiliriz
+            sayac 0 ise hic hata yok sonucunu cikarabilir
          */
 
 
-        if (sayac == 0){
-            return true;
-        } else {
+        if (sayac == 0){ // hic hata bulamadi
+           return true;
+        } else { // hata buldu
             return false;
         }
 
-
     }
+
+
 
 
 

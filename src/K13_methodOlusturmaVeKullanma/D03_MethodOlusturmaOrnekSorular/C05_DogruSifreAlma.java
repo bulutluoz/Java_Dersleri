@@ -15,33 +15,27 @@ public class C05_DogruSifreAlma {
 
         Scanner scanner = new Scanner(System.in);
 
-        int sayac = 0;
-        boolean sonuc = false;
+        int sayac=0;
 
-        while ( !sonuc ){ // sonuc == false devam etmesi icin gerekli sarti yaziyoruz
-            /*
-                sonuc variable'i zaten boolean
-                yani true veya false sonucu barindiriyor
 
-                sonuc == false
-                yazdigimizda, bu islem de boolean bir sonuc verir
+        for (int i = 0; i <=10000 ; i++) {
 
-                sonuc == false yazdigimizda
-                Java diyor ki
-                zaten boolean olan sonuc'u
-                bir daha == ile karsilastirip bir boolean elde etmek yerine
-                bunu daha basit sekilde yazabilirsin
-             */
 
-            System.out.println("Lutfen bir sifre giriniz...");
+            System.out.println("Lutfen sifrenizi giriniz...");
             String sifre = scanner.nextLine();
             sayac++;
-            sonuc = C04_SifreKontrol.isValid(sifre);
+
+            boolean sonuc = C04_SifreKontrol.isValid(sifre);
+
+
+            if (sonuc){ // sonuc == true
+                System.out.println("Tebrikler, " + sayac + " denemede uygun bir sifre girdiniz...");
+                break;
+            }
 
 
         }
 
-        System.out.println("Tebrikler... "+ sayac + " kere deneme yapinca gecerli sifre girebildiniz..");
 
 
 
