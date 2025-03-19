@@ -12,6 +12,20 @@ public class C03_SayininRakamlarToplaminiBulma {
         System.out.println("Rakamlar toplamini bulmak icin pozitif bir tamsayi giriniz..");
         int girilenSayi = scanner.nextInt();
 
+        int sayi = girilenSayi;
+
+        int rakam = 0;
+        int rakamlarToplami = 0;
+
+
+        while (  sayi>0 ){
+            rakam = sayi % 10 ;
+            rakamlarToplami += rakam;
+            sayi = sayi/10 ;
+        }
+
+
+        System.out.println("Girilen " + girilenSayi + " sayisinin rakamlar toplami : " + rakamlarToplami);
 
     }
 }
