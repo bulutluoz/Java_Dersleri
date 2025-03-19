@@ -24,19 +24,55 @@ public class C02_whileLoopVsDoWhileLoop {
 
         Scanner scanner = new Scanner(System.in);
 
-        int sayi=0;
+        int girilenSayi= 0; // while loop icin bunun 0 olmamasi lazim
+                            // do while loop icin ilk degerin hic bir onemi yok
+                            // cunku kontrol yapmadan once kullanicidan deger aliyor
         int sayiToplami = 0;
         int sayac = 0 ;
 
 
         // while loop ile yapalim
 
+//        while(girilenSayi != 0 ){
+//
+//            System.out.println("Toplanmak uzere pozitif bir tamsayi giriniz " +
+//                    "\nBitirmek icin 0 (sifir)a basiniz");
+//
+//            girilenSayi = scanner.nextInt();
+//
+//            if (girilenSayi>0){
+//                sayiToplami += girilenSayi;
+//                sayac++;
+//            } else if (girilenSayi<0) {
+//                System.out.println("Sayi negatif olamaz...");
+//            }
+//
+//        }
+//
+//
+//        System.out.println("Girilen " + sayac + " adet pozitif sayinin toplami : " + sayiToplami);
 
 
         // aynisini do while ile yapalim
 
 
+        do {
 
+            System.out.println("Toplanmak uzere pozitif bir tamsayi giriniz " +
+                                "\nBitirmek icin 0 (sifir)a basiniz");
+
+            girilenSayi = scanner.nextInt();
+
+            if (girilenSayi>0){
+                sayiToplami += girilenSayi;
+                sayac++;
+            } else if (girilenSayi<0) {
+                System.out.println("Sayi negatif olamaz...");
+            }
+        } while (girilenSayi != 0);
+
+
+        System.out.println("Girilen " + sayac + " adet pozitif sayinin toplami : " + sayiToplami);
 
 
     }

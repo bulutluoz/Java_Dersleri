@@ -29,13 +29,24 @@ public class C03_WhileVsDoWhile {
         int sayi = 15;
 
         // while loop
+        System.out.print("while loop : ");
+        while (sayi<10){
+            System.out.print(sayi + " ");
+            sayi++;
+        }
 
 
-
-
-
-
+        System.out.println();
         // do while loop
+        System.out.print("do while loop : ");
+        sayi = 15;
+
+
+        do {
+            System.out.print(sayi + " ");
+            sayi++;
+        }while(sayi<10);
+
 
       
 
