@@ -2,7 +2,7 @@ package K15_doWhileLoop.D02_OrnekSoruCozumu;
 
 import java.util.Scanner;
 
-public class C05_DoWhileLoop {
+public class C02_DoWhileLoop {
 
     public static void main(String[] args) {
 
@@ -18,24 +18,30 @@ public class C05_DoWhileLoop {
 
         int karekokDegeri  = 1 ;
 
-        do {
 
-            if (karekokDegeri*karekokDegeri == sayi){
-                System.out.println("true");
+        do {
+            if (karekokDegeri* karekokDegeri == sayi){
+                System.out.println(true);
                 break;
             }
 
-
+            if (karekokDegeri*karekokDegeri > sayi){
+                System.out.println(false);
+            }
 
             karekokDegeri++;
 
-            if (karekokDegeri*karekokDegeri>sayi){
-                System.out.println("false");
-                break;
+            if (karekokDegeri*karekokDegeri > sayi){
+                System.out.println(false);
             }
 
+        }while ( karekokDegeri * karekokDegeri <= sayi );
 
-        }while (  karekokDegeri *karekokDegeri <= sayi  );
+
+
+
+
+
 
 
     }
