@@ -14,16 +14,13 @@ public class C01_EnUzunKelime {
         // esit sayida harfe sahip isimlerden herhangi biri olabilir
 
 
-            enUzunIsmiYazdir();
 
 
-
-    }
-
-    public static void enUzunIsmiYazdir(){
 
 
     }
+
+
 
 
 
