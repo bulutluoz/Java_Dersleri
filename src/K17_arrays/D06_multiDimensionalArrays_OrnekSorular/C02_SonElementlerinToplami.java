@@ -1,4 +1,4 @@
-package K17_arrays.D06_MultiDimensionalArrays_OrnekSorular;
+package K17_arrays.D06_multiDimensionalArrays_OrnekSorular;
 
 public class C02_SonElementlerinToplami {
 

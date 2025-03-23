@@ -1,4 +1,4 @@
-package K07_Operatorler.D01_KarsilastirmaOperatorleri;
+package K07_operatorler.D01_KarsilastirmaOperatorleri;
 
 public class C01_KarsilastirmaOperatorleri {
 

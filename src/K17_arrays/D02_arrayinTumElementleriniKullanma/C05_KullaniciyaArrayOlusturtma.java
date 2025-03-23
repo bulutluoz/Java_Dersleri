@@ -5,17 +5,33 @@ import java.util.Scanner;
 
 public class C05_KullaniciyaArrayOlusturtma {
 
-    public static void main(String[] args) {
 
 
+    // Kullanicidan array’in boyutunu ve Integer elementlerini alip
+    // array’i olusturan ve olusturulan array'i donduren bir method olusturun.
+
+
+    public static Integer[] arrayOlustur(){
+
+        int boyut=0;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Lutfen olusturulacak array'in eleman sayisini giriniz...");
+        boyut = scanner.nextInt();
+
+        Integer[] arr = new Integer[boyut];
+
+        for (int i = 0; i < arr.length ; i++) {
+
+            System.out.println(i+1 + ". elemani giriniz...");
+            arr[i] = scanner.nextInt();
+
+        }
+
+        return arr;
 
 
     }
-
-    // Kullanicidan array’in boyutunu ve Integer elementlerini alip
-    // array’i olusturan ve olusturulan arrray'i donduren bir method olusturun.
-
-
 
 
 

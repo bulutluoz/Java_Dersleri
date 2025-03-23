@@ -1,6 +1,4 @@
-package K17_arrays.D06_MultiDimensionalArrays_OrnekSorular;
-
-import java.util.Arrays;
+package K17_arrays.D06_multiDimensionalArrays_OrnekSorular;
 
 public class C01_TumElementleriGozdenGecirme {
 

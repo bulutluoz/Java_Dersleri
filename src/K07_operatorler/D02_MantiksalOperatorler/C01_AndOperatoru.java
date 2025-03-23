@@ -1,4 +1,4 @@
-package K07_Operatorler.D02_MantiksalOperatorler;
+package K07_operatorler.D02_MantiksalOperatorler;
 
 public class C01_AndOperatoru {
 
