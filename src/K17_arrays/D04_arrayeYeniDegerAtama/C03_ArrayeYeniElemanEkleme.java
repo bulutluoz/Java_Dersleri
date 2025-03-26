@@ -2,7 +2,7 @@ package K17_arrays.D04_arrayeYeniDegerAtama;
 
 import java.util.Arrays;
 
-public class C02_ArrayeYeniElemanEkleme {
+public class C03_ArrayeYeniElemanEkleme {
 
 
     public static void main(String[] args) {
