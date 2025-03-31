@@ -16,36 +16,36 @@ public class C02_ListMethodlari {
         // listede kac element oldugunu yazdirin
 
 
-        // listede element olarak 7'nin var olup olmadigini yazdirin
-
-
-        // listede varsa 2'nin ilk index'ini yazdirin
-
-
-        // listede varsa 2'nin son kullanilma index'ini yazdirin
+        // listenin bos olup olmadagini yazdirin
 
 
 
-        // [5, 7, 2, 9, 1, 2, 5, 9, 3]
-        // listede varsa 11'in ilk index'ini yazdirin
+        // listede eleman olarak 5 olup olmadigini yazdirin
+
+
+        // listede 8 yoksa listeye ekleyin
+
+
+        // listede 3 varsa listenin eleman sayisini yazdirin
+
+
+        // listede en bastaki elementi yazdirin
+
+
+        // listede en bastan 3. elementi yazdirin
+
+
+        // listede en sondaki elementi yazdirin
+
+
+        // listede sondan 3. elementi yazdirin
 
 
 
 
-        // listede 2 icin asagidaki cumlelerden uygun olani yazdirin
-        // listede 2 yok
-        // listede 2 sadece 1 tane var
-        // listede 2 1'den fazla var
 
 
 
-
-        // listedeki tum elementleri natural order'a uygun olarak siralayin
-
-
-
-
-        // listedeki tum elementleri silin
 
 
 

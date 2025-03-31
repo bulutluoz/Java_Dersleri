@@ -1,10 +1,10 @@
-package K18_arrayLists.D02_ArrayListMethodlar;
+package K18_arrayLists.D01_ArrayListOlusturmaVeMethodlar;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class C01_TumElementleriArtirma {
+public class C04_ListedekiTumElementleriArtirma {
 
     public static void main(String[] args) {
 
@@ -25,9 +25,5 @@ public class C01_TumElementleriArtirma {
     // verilen Integer bir listedeki tum elementleri
     // istenen bir deger kadar artirip listenin son halini donduren
     // bir method olusturun.
-
-
-
-
 
 }

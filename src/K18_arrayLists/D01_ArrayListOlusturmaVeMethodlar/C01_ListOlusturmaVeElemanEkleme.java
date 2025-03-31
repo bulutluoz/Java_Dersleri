@@ -14,23 +14,25 @@ public class C01_ListOlusturmaVeElemanEkleme {
 
 
 
-            // List<String> isimler = new List<>();
-            // 'List' is abstract; cannot be instantiated
-            // List soyut bir yapi oldugundan obje olusturulamaz
+            /*
+                List<String> isimler = new List<>();
+                'List' is abstract; cannot be instantiated
+                List soyut bir yapi oldugundan obje olusturulamaz
+             */
 
 
-            List<String> isimler = new ArrayList<>();
-            List<String> isimler1 = new ArrayList<String>();
-            ArrayList<String> isimler2 = new ArrayList<>();
 
-        System.out.println(isimler); //  []
 
-        // icine int elementler koyabilecegimiz sayilar isminde bir ArrayList olusturun
+        // icine int elementler koyabilecegimiz
+        // sayilar isminde bir ArrayList olusturun
 
-        List<Integer> sayilar = new ArrayList<>();
 
-        // Type argument cannot be of primitive type
-        // icine konulacak elementlerin data turu primitive OLAMAZ
+
+        /*
+            Type argument cannot be of primitive type
+            icine konulacak elementlerin data turu primitive OLAMAZ
+         */
+
 
 
         // Listeye 3,6,8 ve 9 ekleyin
@@ -43,9 +45,8 @@ public class C01_ListOlusturmaVeElemanEkleme {
 
 
 
-        // element olarak 3,4,5,6,2,3,4,2,3,4,5,4,7,8,9 bulunduran bir ArrayList olusturun
-
-
+        // element olarak 3,4,5,6,2,3,4,2,3,4,5,4,7,8,9 bulunduran
+        // bir ArrayList olusturun
 
 
         /*

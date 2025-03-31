@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class C04_ArraydenTekrarEdenSayilariSilme {
+public class C05_ArraydenTekrarEdenSayilariSilme {
 
     public static void main(String[] args) {
 
