@@ -13,55 +13,51 @@ public class C03_IstenenElementiKullanma {
 
         int toplam = 0;
 
+        for (int i = 0; i < arr.length ; i++) {
 
+            toplam +=  arr[i];
 
-        System.out.println( "Array'deki elementlerin toplami : " + toplam); // 23
-
-
-
-        List<Integer> sayilar = new ArrayList<>(Arrays.asList(3,6,8,1,4,0));
-
-        // sayilar listesinin 2.index'indeki sayiyi yazdirin
+        }
+        System.out.println(toplam); // 23
 
 
 
+
+
+        List<Integer> sayilar= new ArrayList<>(Arrays.asList(5,7,2,9,1,2,5,9,3));
         // sayilar listesindeki tum elementleri toplayin
-
         toplam = 0;
 
+        for (int i = 0; i < sayilar.size() ; i++) {
 
+            toplam += sayilar.get(i);
 
-        System.out.println("sayilar listesindeki elementlerin toplami : " + toplam); // 22
+        }
 
-
-
-
-        // 2.index'deki elementi 5 yapin ==>
-
-
-
-
-        // 4.index'deki elementi yazdirin
+        System.out.println(toplam); // 43
 
 
 
+        // sayilar listesinde verilen sinirlar icinde olan sayilarin toplamini yazdirin
+        // not : sinir degerleri de toplama dahil olacak
 
-        // sayilar listesinde 4.index'deki elementi 11 yapin
+        //   5,7,2,9,1,2,5,9,3
+        toplam = 0;
+
+        int enKucuk = 3;
+        int enBuyuk = 7;
+
+        for (int i = 0; i < sayilar.size() ; i++) {
+
+            if (sayilar.get(i) >= enKucuk  && sayilar.get(i)<=enBuyuk){
+                toplam += sayilar.get(i);
+            }
+
+        }
+
+        System.out.println(toplam); // 20
 
 
-
-        // sayilar listesindeki 4.index'e 23 ekleyin
-
-
-
-
-        /*
-            add() yeni bir element ekler, element sayisi 1 artar
-            ve eklendigi index'den sonraki elementler 1 geriye itilir
-
-            set() yeni element eklemez, listenin eleman sayisi ayni kalir
-            sadece verilen index'deki element update edilmis olur
-         */
 
     }
 }
