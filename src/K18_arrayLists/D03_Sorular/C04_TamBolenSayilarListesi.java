@@ -3,7 +3,7 @@ package K18_arrayLists.D03_Sorular;
 import java.util.ArrayList;
 import java.util.List;
 
-public class C03_TamBolenSayilarListesi {
+public class C04_TamBolenSayilarListesi {
 
     public static void main(String[] args) {
 

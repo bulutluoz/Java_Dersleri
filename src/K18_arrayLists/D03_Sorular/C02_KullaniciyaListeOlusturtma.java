@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class C01_KullaniciyaListeOlusturtma {
+public class C02_KullaniciyaListeOlusturtma {
 
     public static void main(String[] args) {
 

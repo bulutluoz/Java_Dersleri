@@ -1,11 +1,11 @@
-package K18_arrayLists.D02_ArrayListMethodlar;
+package K18_arrayLists.D03_Sorular;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class C05_ArraydenTekrarEdenSayilariSilme {
+public class C01_ArraydenTekrarEdenSayilariSilme {
 
     public static void main(String[] args) {
 
